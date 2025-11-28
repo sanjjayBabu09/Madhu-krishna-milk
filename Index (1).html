@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Madhu Krishna Milk, Cool Drinks & Grocery | Velugodu, Nandhyal</title>
+
+    <!-- Basic SEO -->
+    <meta name="description" content="Madhu Krishna Milk & Dairy Farm near Jagadhamba shop, Velugodu, Nandhyal. Fresh cow & buffalo milk, cool drinks and grocery items with home delivery service." />
+    <meta name="keywords" content="Madhu Krishna Milk & Dairy Farm, milk shop Velugodu, milk shop Nandhyal, cool drinks, grocery shop, kirana shop, fresh milk delivery, buffalo milk, cow milk, dairy products, curd, ghee, paneer" />
+    <meta name="author" content="Madhu Krishna Milk & Dairy Farm" />
+
+    <!-- Mobile Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Open Graph (for Google / Social) -->
+    <meta property="og:title" content="Madhu Krishna Milk, Cool Drinks & Grocery | Velugodu, Nandhyal" />
+    <meta property="og:description" content="Pure and fresh dairy products, cool drinks and groceries with home delivery service near Jagadhamba shop, Velugodu, Nandhyal." />
+    <meta property="og:type" content="website" />
+
+    <style>
+        :root {
+            --primary: #2e7d32;    /* Green */
+            --primary-light: #a5d6a7;
+            --accent: #ffb300;     /* Warm yellow */
+            --bg: #f5fff7;
+            --text: #222222;
+            --white: #ffffff;
+            --shadow: 0 8px 20px rgba(0,0,0,0.08);
+            --radius-lg: 18px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* Top bar */
+        .top-bar {
+            background: var(--primary);
+            color: var(--white);
+            padding: 6px 12px;
+            font-size: 0.85rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-bar a {
+            color: var(--white);
+            text-decoration: none;
+        }
+
+        /* Navbar */
+        header {
+            background: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 10px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 20%, #ffffff, #87ce80);
+            border: 2px solid var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            color: var(--primary);
+            font-size: 1.1rem;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+        .logo-text span:first-child {
+            font-weight: 700;
+            font-size: 1.05rem;
+        }
+        .logo-text span:last-child {
+            font-size: 0.8rem;
+            color: #555;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 16px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-size: 0.95rem;
+            color: #333;
+            padding: 6px 10px;
+            border-radius: 999px;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        nav a:hover {
+            background: var(--primary-light);
+            color: var(--primary);
+        }
+
+        .nav-cta {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-whatsapp {
+            padding: 7px 14px;
+            border-radius: 999px;
+            border: none;
+            background: #25d366;
+            color: white;
+            font-size: 0.9rem;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn-call {
+            padding: 7px 14px;
+            border-radius: 999px;
+            border: 1px solid var(--primary);
+            background: transparent;
+            color: var(--primary);
+            font-size: 0.9rem;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        /* Hero section */
+        .hero {
+            max-width: 1100px;
+            margin: 18px auto 0;
+            padding: 18px 16px 32px;
+            display: grid;
+            grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+            gap: 24px;
+        }
+
+        .hero-text {
+            padding: 16px;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 999px;
+            background: var(--primary-light);
+            color: var(--primary);
+            font-size: 0.85rem;
+            margin-bottom: 8px;
+        }
+
+        .hero h1 {
+            font-size: 2.1rem;
+            margin-bottom: 8px;
+            color: #1b5e20;
+        }
+
+        .hero h1 span {
+            color: var(--accent);
+        }
+
+        .hero-sub {
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+        }
+
+        .hero-list {
+            margin-top: 8px;
+            margin-bottom: 12px;
+        }
+
+        .hero-list li {
+            list-style: none;
+            padding-left: 18px;
+            position: relative;
+            font-size: 0.93rem;
+        }
+
+        .hero-list li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--primary);
+            font-size: 0.85rem;
+        }
+
+        .hero-cta {
+            margin-top: 14px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .hero-note {
+            font-size: 0.8rem;
+            color: #555;
+            margin-top: 8px;
+        }
+
+        .hero-img-wrapper {
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            background: linear-gradient(135deg, #e8f5e9, #ffffff);
+            display: flex;
+            align-items: stretch;
+            justify-content: stretch;
+            position: relative;
+        }
+
+        .hero-img {
+            width: 100%;
+            object-fit: cover;
+            min-height: 260px;
+        }
+
+        .hero-tag {
+            position: absolute;
+            bottom: 14px;
+            left: 14px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-size: 0.8rem;
+        }
+
+        /* Sections */
+        section {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 32px 16px;
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            margin-bottom: 8px;
+            color: #1b5e20;
+        }
+
+        .section-sub {
+            font-size: 0.9rem;
+            margin-bottom: 18px;
+            color: #555;
+        }
+
+        /* Products */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 16px;
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 14px;
+            box-shadow: var(--shadow);
+        }
+
+        .card h3 {
+            font-size: 1.02rem;
+            margin-bottom: 4px;
+        }
+
+        .pill {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 999px;
+            background: var(--primary-light);
+            font-size: 0.75rem;
+            margin-top: 4px;
+        }
+
+        /* About */
+        .about-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+            gap: 22px;
+        }
+
+        .about-highlights li {
+            margin-left: 18px;
+            font-size: 0.9rem;
+        }
+
+        .about-box {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 14px;
+            box-shadow: var(--shadow);
+            font-size: 0.9rem;
+        }
+
+        /* Gallery */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 12px;
+        }
+
+        .gallery-item {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            background: #e8f5e9;
+            height: 150px;
+            position: relative;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gallery-item span {
+            position: absolute;
+            bottom: 8px;
+            left: 8px;
+            background: rgba(0,0,0,0.55);
+            color: #fff;
+            padding: 3px 8px;
+            border-radius: 999px;
+            font-size: 0.72rem;
+        }
+
+        /* Delivery */
+        .delivery-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+            gap: 20px;
+        }
+
+        .delivery-tagline {
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .delivery-steps li {
+            margin-left: 18px;
+            font-size: 0.9rem;
+        }
+
+        .delivery-box {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 14px;
+            box-shadow: var(--shadow);
+            font-size: 0.9rem;
+        }
+
+        /* Contact + Map */
+        .contact-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+            gap: 20px;
+        }
+
+        .contact-details p {
+            font-size: 0.9rem;
+        }
+
+        .contact-details strong {
+            color: #1b5e20;
+        }
+
+        iframe {
+            border: 0;
+            border-radius: 18px;
+            box-shadow: var(--shadow);
+            width: 100%;
+            min-height: 260px;
+        }
+
+        .contact-buttons {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background: #1b5e20;
+            color: #fff;
+        }
+
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 14px 16px;
+            font-size: 0.8rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        /* Responsive */
+        @media (max-width: 780px) {
+            .hero {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .about-grid,
+            .delivery-layout,
+            .contact-layout {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            nav ul {
+                display: none; /* simple mobile nav (can later add hamburger) */
+            }
+
+            .nav-container {
+                justify-content: space-between;
+            }
+
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .top-bar {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div>Fresh Milk • Cool Drinks • Grocery • Daily Delivery</div>
+        <div><a href="tel:+919985848497">Call: +91 99858 48497</a></div>
+    </div>
+
+    <!-- HEADER / NAVBAR -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-circle">MK</div>
+                <div class="logo-text">
+                    <span>Madhu Krishna Milk & Dairy Farm</span>
+                    <span>Milk, Cool Drinks & Grocery • Velugodu, Nandhyal</span>
+                </div>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#delivery">Delivery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-cta">
+                <a class="btn-whatsapp" href="https://wa.me/919985848497?text=Hello%20Madhu%20Krishna%20Milk%20%26%20Dairy%20Farm%2C%20I%20want%20to%20order." target="_blank" rel="noopener">
+                    WhatsApp
+                </a>
+                <a class="btn-call" href="tel:+919985848497">Call Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <main id="home">
+        <section class="hero">
+            <div class="hero-text">
+                <div class="hero-badge">Milk, Cool Drinks & Grocery in Velugodu</div>
+                <h1>Pure & Fresh <span>Milk</span>, Cool Drinks & Groceries</h1>
+                <p class="hero-sub">
+                    Madhu Krishna Milk & Dairy Farm – a **milk shop, cool drinks & grocery store** near 
+                    <strong>Jagadhamba shop, Velugodu, Nandhyal</strong>.  
+                    Farm-fresh milk, branded cool drinks and daily home groceries at one place.
+                </p>
+
+                <ul class="hero-list">
+                    <li>Early morning fresh cow & buffalo milk</li>
+                    <li>Cool drinks, juices, water bottles & ice creams</li>
+                    <li>Groceries – rice, dal, oil, sugar, soaps and daily needs</li>
+                    <li>Home delivery service in and around Velugodu</li>
+                </ul>
+
+                <div class="hero-cta">
+                    <a class="btn-whatsapp" href="https://wa.me/919985848497?text=Hello%20Madhu%20Krishna%20Milk%20%26%20Grocery%2C%20I%20want%20to%20enquire%20about%20delivery." target="_blank">
+                        Order on WhatsApp
+                    </a>
+                    <a class="btn-call" href="#products">View Products</a>
+                </div>
+
+                <p class="hero-note">
+                    Call / WhatsApp: <strong>+91 99858 48497</strong> &nbsp;|&nbsp; Milk • Cool Drinks • Grocery.
+                </p>
+            </div>
+
+            <div class="hero-img-wrapper">
+                <!-- Replace src with your own 4K dairy / shop image -->
+                <img src="https://images.pexels.com/photos/4911733/pexels-photo-4911733.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Dairy farm and shop" class="hero-img" />
+                <div class="hero-tag">White-green clean theme • Milk • Cool Drinks • Grocery</div>
+            </div>
+        </section>
+
+        <!-- PRODUCTS -->
+        <section id="products">
+            <h2 class="section-title">Our Products</h2>
+            <p class="section-sub">
+                We provide **fresh dairy, cool drinks and daily grocery items** from our farm and store in Velugodu.
+            </p>
+
+            <div class="products-grid">
+                <!-- Dairy Items -->
+                <div class="card">
+                    <h3>Fresh Cow Milk</h3>
+                    <p>Natural, balanced milk ideal for daily use for kids and family.</p>
+                    <span class="pill">Daily Morning Supply</span>
+                </div>
+                <div class="card">
+                    <h3>Fresh Buffalo Milk</h3>
+                    <p>Rich and creamy milk, perfect for tea, coffee and sweets.</p>
+                    <span class="pill">High Cream Content</span>
+                </div>
+                <div class="card">
+                    <h3>Curd / Dahi</h3>
+                    <p>Thick homemade-style curd prepared from our own fresh milk.</p>
+                    <span class="pill">Made Daily</span>
+                </div>
+                <div class="card">
+                    <h3>Ghee</h3>
+                    <p>Traditional desi ghee with rich aroma and pure taste.</p>
+                    <span class="pill">Limited Batches</span>
+                </div>
+                <div class="card">
+                    <h3>Paneer</h3>
+                    <p>Soft and fresh paneer ideal for curries and snacks.</p>
+                    <span class="pill">Pre-order</span>
+                </div>
+
+                <!-- Grocery Section -->
+                <div class="card">
+                    <h3>Groceries</h3>
+                    <p>All daily home-use groceries available at best price.</p>
+                    <span class="pill">Rice, Dal, Oil, Atta, Sugar, etc.</span>
+                </div>
+
+                <!-- Cool Drinks Section -->
+                <div class="card">
+                    <h3>Cool Drinks & Juices</h3>
+                    <p>Branded cool drinks and ready-to-serve juices.</p>
+                    <span class="pill">Coca-Cola, Thums Up, Sprite, Maaza</span>
+                </div>
+
+                <div class="card">
+                    <h3>Water Bottles & Ice Creams</h3>
+                    <p>Chilled water bottles and various ice creams & kulfis.</p>
+                    <span class="pill">Perfect for summers</span>
+                </div>
+
+                <div class="card">
+                    <h3>Bulk Orders</h3>
+                    <p>Milk, curd, cool drinks & water for hotels and functions.</p>
+                    <span class="pill">Contact for Pricing</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <h2 class="section-title">About Madhu Krishna Milk & Grocery</h2>
+            <p class="section-sub">
+                We are a **dairy farm and small grocery & cool drinks shop** near 
+                <strong>Jagadhamba shop, Velugodu, Nandhyal</strong>, serving local families every day.
+            </p>
+
+            <div class="about-grid">
+                <div>
+                    <p style="font-size:0.95rem; margin-bottom:10px;">
+                        From fresh farm milk to daily groceries, our aim is to provide everything you need for
+                        your home under one roof – with quality, trust and reasonable price.
+                    </p>
+                    <ul class="about-highlights">
+                        <li>Locally owned and trusted by families in Velugodu</li>
+                        <li>Fresh milk straight from our dairy farm</li>
+                        <li>Cool drinks, water and groceries always in stock</li>
+                        <li>Friendly service and easy phone / WhatsApp support</li>
+                    </ul>
+                </div>
+
+                <div class="about-box">
+                    <strong>Why choose us?</strong>
+                    <ul class="about-highlights" style="margin-top:6px;">
+                        <li>Milk, cool drinks & groceries at one place</li>
+                        <li>Hygienic handling and neat shop</li>
+                        <li>Home delivery option for nearby areas</li>
+                        <li>Flexible quantity for small homes and big families</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY -->
+        <section id="gallery">
+            <h2 c
